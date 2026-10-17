@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Baraat Invitation</title>
+<meta property="og:title" content="Baraat Invitation — Syeda Ansharah Shoaib & Hamza Shakeel"/>
+<meta property="og:description" content="You are invited to the Baraat. Friday, 13th November 2026 · Shayan Banquet & Lawn, Karachi"/>
+<meta property="og:image" content="https://syedaansharahshoaib.github.io/Baraat/assets/preview.png"/>
+<meta property="og:image:width" content="1200"/>
+<meta property="og:image:height" content="630"/>
+<meta property="og:type" content="website"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://syedaansharahshoaib.github.io/Baraat/assets/preview.png"/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Pinyon+Script&family=Jost:wght@300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="locked">
+
+<canvas id="fx" aria-hidden="true"></canvas>
+
+<!-- SHARED ENVELOPE INTRO -->
+<section id="intro" class="invitation-intro" aria-label="Baraat invitation cover">
+  <div class="intro-aura" aria-hidden="true"></div>
+  <div class="intro-flowers flower-left" aria-hidden="true"><i></i><i></i><i></i><b></b></div>
+  <div class="intro-flowers flower-right" aria-hidden="true"><i></i><i></i><i></i><b></b></div>
+  <button class="envelope" id="envelope" type="button" aria-label="Open Baraat invitation">
+    <span class="env-back"></span>
+    <span class="env-letter">
+      <small>You are invited to the</small>
+      <strong>Baraat</strong>
+      <em><span id="mono-b">B</span> &amp; <span id="mono-g">G</span></em>
+    </span>
+    <span class="env-front"></span>
+    <span class="env-flap"></span>
+    <span class="env-ribbon ribbon-horizontal" aria-hidden="true"></span>
+    <span class="ribbon-bow" aria-hidden="true"><svg viewBox="0 0 240 132"><path class="ribbon-svg-tail ribbon-svg-tail-left" d="M112 62 C94 72 81 96 69 128 L99 114 L116 72 Z"></path><path class="ribbon-svg-tail ribbon-svg-tail-right" d="M128 62 C146 72 159 96 171 128 L141 114 L124 72 Z"></path><path class="ribbon-svg-loop ribbon-svg-loop-left" d="M119 59 C96 24 48 9 20 29 C-2 45 16 77 49 80 C75 82 98 71 119 62 Z"></path><path class="ribbon-svg-loop ribbon-svg-loop-right" d="M121 59 C144 24 192 9 220 29 C242 45 224 77 191 80 C165 82 142 71 121 62 Z"></path><path class="ribbon-svg-fold ribbon-svg-fold-left" d="M112 58 C86 49 58 43 29 47 C52 58 77 65 106 64"></path><path class="ribbon-svg-fold ribbon-svg-fold-right" d="M128 58 C154 49 182 43 211 47 C188 58 163 65 134 64"></path><ellipse class="ribbon-svg-knot" cx="120" cy="61" rx="24" ry="19"></ellipse></svg></span>
+    <span class="env-seal" aria-hidden="true"><span class="seal-mark">B</span><span class="seal-caption">Baraat</span></span>
+  </button>
+  <p class="intro-label">A wedding invitation</p>
+  <p class="tap-hint">Tap to untie &amp; open</p>
+</section>
+
+<main id="card" class="hidden">
+  <!-- HERO -->
+  <section class="hero">
+    <div class="split">
+
+      <!-- ═══ BRIDE HALF ═══ -->
+      <div class="half bride">
+
+        <!-- TL: large corner bouquet sweeping from corner inward -->
+        <svg class="hf hf-tl" aria-hidden="true" viewBox="0 0 280 320" xmlns="http://www.w3.org/2000/svg">
+          <path d="M6 314 C22 258 58 205 108 168 C150 135 198 112 272 90" stroke="rgba(255,218,130,.68)" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+          <path d="M6 314 C34 272 72 232 122 202 C158 180 206 166 270 154" stroke="rgba(255,218,130,.38)" stroke-width="1.4" fill="none" stroke-linecap="round"/>
+          <path d="M6 314 C44 282 88 258 136 244" stroke="rgba(255,218,130,.22)" stroke-width="1" fill="none" stroke-linecap="round"/>
+          <!-- leaves on main stem -->
+          <path d="M62 242 C44 222 38 196 50 176 C58 202 62 224 62 242Z" fill="rgba(255,255,255,.24)"/>
+          <path d="M64 242 C82 222 88 196 76 176 C68 202 64 224 64 242Z" fill="rgba(255,255,255,.16)"/>
+          <path d="M118 196 C100 177 96 153 108 136 C114 160 118 180 118 196Z" fill="rgba(255,255,255,.2)"/>
+          <path d="M120 196 C138 177 142 153 130 136 C124 160 120 180 120 196Z" fill="rgba(255,255,255,.13)"/>
+          <path d="M170 156 C154 138 151 116 163 100 C168 122 170 140 170 156Z" fill="rgba(255,255,255,.18)"/>
+          <path d="M172 156 C188 138 191 116 179 100 C174 122 172 140 172 156Z" fill="rgba(255,255,255,.12)"/>
+          <!-- small accent leaves on secondary stem -->
+          <path d="M82 218 C74 207 75 193 83 186 C84 199 84 210 82 218Z" fill="rgba(255,230,150,.38)"/>
+          <path d="M144 184 C136 173 137 161 145 154 C146 167 146 177 144 184Z" fill="rgba(255,230,150,.32)"/>
+          <path d="M200 166 C193 156 194 143 202 137 C203 149 203 159 200 166Z" fill="rgba(255,230,150,.28)"/>
+          <!-- BLOOM 1: large, near top-right of arc -->
+          <g class="hbloom" transform="translate(270,86)">
+            <ellipse rx="16" ry="10" fill="rgba(255,210,215,.85)" transform="rotate(0)"/>
+            <ellipse rx="16" ry="10" fill="rgba(255,190,198,.78)" transform="rotate(36)"/>
+            <ellipse rx="16" ry="10" fill="rgba(245,165,178,.72)" transform="rotate(72)"/>
+            <ellipse rx="16" ry="10" fill="rgba(245,165,178,.72)" transform="rotate(108)"/>
+            <ellipse rx="16" ry="10" fill="rgba(255,190,198,.78)" transform="rotate(144)"/>
+            <ellipse rx="12" ry="6.5" fill="rgba(255,230,218,.82)" transform="rotate(18)"/>
+            <ellipse rx="12" ry="6.5" fill="rgba(255,230,218,.75)" transform="rotate(54)"/>
+            <ellipse rx="12" ry="6.5" fill="rgba(255,230,218,.75)" transform="rotate(90)"/>
+            <ellipse rx="12" ry="6.5" fill="rgba(255,230,218,.75)" transform="rotate(126)"/>
+            <ellipse rx="12" ry="6.5" fill="rgba(255,230,218,.82)" transform="rotate(162)"/>
+            <circle r="8"   fill="rgba(255,238,162,.96)"/>
+            <circle r="4"   fill="rgba(255,255,225,.92)"/>
+            <circle r="1.8" fill="rgba(215,169,73,.92)"/>
+          </g>
+          <!-- BLOOM 2: mid arc -->
+          <g class="hbloom" transform="translate(158,120)">
+            <ellipse rx="13" ry="8.5" fill="rgba(255,200,208,.8)" transform="rotate(0)"/>
+            <ellipse rx="13" ry="8.5" fill="rgba(255,180,192,.72)" transform="rotate(45)"/>
+            <ellipse rx="13" ry="8.5" fill="rgba(240,158,172,.67)" transform="rotate(90)"/>
+            <ellipse rx="13" ry="8.5" fill="rgba(240,158,172,.67)" transform="rotate(135)"/>
+            <ellipse rx="10" ry="5.5" fill="rgba(255,225,213,.75)" transform="rotate(22)"/>
+            <ellipse rx="10" ry="5.5" fill="rgba(255,225,213,.68)" transform="rotate(67)"/>
+            <ellipse rx="10" ry="5.5" fill="rgba(255,225,213,.68)" transform="rotate(112)"/>
+            <ellipse rx="10" ry="5.5" fill="rgba(255,225,213,.75)" transform="rotate(157)"/>
+            <circle r="6"   fill="rgba(255,236,158,.92)"/>
+            <circle r="3"   fill="rgba(255,255,220,.88)"/>
+            <circle r="1.2" fill="rgba(215,169,73,.88)"/>
+          </g>
+          <!-- BLOOM 3: lower-left corner cluster -->
+          <g class="hbloom" transform="translate(50,264)">
+            <ellipse rx="11" ry="7.5" fill="rgba(255,195,203,.76)" transform="rotate(0)"/>
+            <ellipse rx="11" ry="7.5" fill="rgba(255,175,186,.68)" transform="rotate(45)"/>
+            <ellipse rx="11" ry="7.5" fill="rgba(238,152,167,.63)" transform="rotate(90)"/>
+            <ellipse rx="11" ry="7.5" fill="rgba(238,152,167,.63)" transform="rotate(135)"/>
+            <ellipse rx="8"  ry="4.5" fill="rgba(255,222,210,.7)" transform="rotate(22)"/>
+            <ellipse rx="8"  ry="4.5" fill="rgba(255,222,210,.63)" transform="rotate(67)"/>
+            <ellipse rx="8"  ry="4.5" fill="rgba(255,222,210,.63)" transform="rotate(112)"/>
+            <circle r="5"   fill="rgba(255,234,155,.9)"/>
+            <circle r="2.3" fill="rgba(255,254,215,.85)"/>
+            <circle r="1"   fill="rgba(215,169,73,.82)"/>
+          </g>
+          <!-- tiny buds -->
+          <circle cx="104" cy="202" r="5.5" fill="rgba(255,222,182,.62)"/>
+          <circle cx="104" cy="202" r="2.8" fill="rgba(255,242,195,.76)"/>
+          <circle cx="208" cy="162" r="5"   fill="rgba(255,222,182,.56)"/>
+          <circle cx="208" cy="162" r="2.4" fill="rgba(255,242,195,.7)"/>
+          <circle cx="30"  cy="288" r="4.5" fill="rgba(255,222,182,.52)"/>
+          <circle cx="30"  cy="288" r="2"   fill="rgba(255,242,195,.65)"/>
+        </svg>
+
+        <!-- BR: secondary accent, bottom-right of bride half -->
+        <svg class="hf hf-br" aria-hidden="true" viewBox="0 0 220 200" xmlns="http://www.w3.org/2000/svg">
+          <path d="M216 196 C188 154 154 122 108 104" stroke="rgba(255,218,130,.6)" stroke-width="1.9" fill="none" stroke-linecap="round"/>
+          <path d="M216 196 C196 162 170 138 130 122" stroke="rgba(255,218,130,.35)" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+          <path d="M163 136 C153 125 151 111 160 103 C162 116 163 128 163 136Z" fill="rgba(255,255,255,.2)"/>
+          <path d="M165 136 C175 125 177 111 168 103 C166 116 165 128 165 136Z" fill="rgba(255,255,255,.13)"/>
+          <g class="hbloom" transform="translate(104,100)">
+            <ellipse rx="12" ry="8" fill="rgba(255,198,206,.75)" transform="rotate(0)"/>
+            <ellipse rx="12" ry="8" fill="rgba(255,178,190,.67)" transform="rotate(45)"/>
+            <ellipse rx="12" ry="8" fill="rgba(238,155,170,.62)" transform="rotate(90)"/>
+            <ellipse rx="12" ry="8" fill="rgba(238,155,170,.62)" transform="rotate(135)"/>
+            <ellipse rx="9"  ry="5" fill="rgba(255,222,208,.68)" transform="rotate(22)"/>
+            <ellipse rx="9"  ry="5" fill="rgba(255,222,208,.62)" transform="rotate(67)"/>
+            <circle r="5.5" fill="rgba(255,234,155,.9)"/>
+            <circle r="2.5" fill="rgba(255,254,215,.85)"/>
+          </g>
+          <circle cx="162" cy="158" r="5" fill="rgba(255,222,178,.58)"/>
+          <circle cx="162" cy="158" r="2.3" fill="rgba(255,242,192,.72)"/>
+        </svg>
+
+        <!-- BL: third accent, bottom-left of bride half -->
+        <svg class="hf hf-bl" aria-hidden="true" viewBox="0 0 200 170" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 166 C32 140 66 120 106 112" stroke="rgba(255,218,130,.52)" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+          <path d="M58 130 C50 118 50 104 59 97 C61 110 61 122 58 130Z" fill="rgba(255,255,255,.18)"/>
+          <path d="M60 130 C68 118 68 104 59 97 C57 110 57 122 60 130Z" fill="rgba(255,255,255,.11)"/>
+          <g class="hbloom" transform="translate(104,108)">
+            <ellipse rx="11" ry="7" fill="rgba(255,193,202,.72)" transform="rotate(0)"/>
+            <ellipse rx="11" ry="7" fill="rgba(238,155,168,.64)" transform="rotate(60)"/>
+            <ellipse rx="11" ry="7" fill="rgba(238,155,168,.64)" transform="rotate(120)"/>
+            <ellipse rx="7.5" ry="4.2" fill="rgba(255,220,206,.66)" transform="rotate(30)"/>
+            <ellipse rx="7.5" ry="4.2" fill="rgba(255,220,206,.58)" transform="rotate(90)"/>
+            <circle r="5" fill="rgba(255,232,152,.88)"/>
+            <circle r="2.2" fill="rgba(255,252,212,.82)"/>
+          </g>
+        </svg>
+
+        <!-- TR: inner-edge vine running top-to-bottom near the gold seam -->
+        <svg class="hf hf-tr" aria-hidden="true" viewBox="0 0 130 300" xmlns="http://www.w3.org/2000/svg">
+          <path d="M122 4 C108 52 98 116 104 178 C108 228 116 262 114 298" stroke="rgba(255,218,130,.48)" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+          <path d="M104 76 C114 63 120 48 114 35 C110 52 106 65 104 76Z" fill="rgba(255,255,255,.22)"/>
+          <path d="M102 76 C92 63 86 48 92 35 C96 52 100 65 102 76Z"    fill="rgba(255,255,255,.15)"/>
+          <path d="M108 172 C118 159 124 144 118 131 C114 148 110 162 108 172Z" fill="rgba(255,255,255,.19)"/>
+          <path d="M106 172 C96 159 90 144 96 131 C100 148 104 162 106 172Z"    fill="rgba(255,255,255,.12)"/>
+          <g class="hbloom" transform="translate(110,108)">
+            <ellipse rx="10" ry="6.5" fill="rgba(255,196,204,.68)" transform="rotate(0)"/>
+            <ellipse rx="10" ry="6.5" fill="rgba(238,155,168,.6)"  transform="rotate(60)"/>
+            <ellipse rx="10" ry="6.5" fill="rgba(238,155,168,.6)"  transform="rotate(120)"/>
+            <ellipse rx="7"  ry="3.8" fill="rgba(255,220,206,.62)" transform="rotate(30)"/>
+            <circle r="4.5" fill="rgba(255,230,150,.84)"/>
+            <circle r="2"   fill="rgba(255,252,212,.78)"/>
+          </g>
+          <g class="hbloom" transform="translate(116,240)">
+            <ellipse rx="9" ry="5.5" fill="rgba(255,186,196,.64)" transform="rotate(0)"/>
+            <ellipse rx="9" ry="5.5" fill="rgba(235,148,163,.56)" transform="rotate(60)"/>
+            <ellipse rx="9" ry="5.5" fill="rgba(235,148,163,.56)" transform="rotate(120)"/>
+            <circle r="4" fill="rgba(255,226,145,.8)"/>
+            <circle r="1.8" fill="rgba(255,248,208,.74)"/>
+          </g>
+        </svg>
+
+        <p class="tag">The Bride</p>
+        <h1 class="name pin" id="n-bride"></h1>
+        <p class="fam" id="p-bride"></p>
+      </div>
+
+      <!-- gold seam divider -->
+      <div class="hero-seam" aria-hidden="true"></div>
+
+      <!-- ═══ GROOM HALF ═══ -->
+      <div class="half groom">
+
+        <!-- TR: large corner bouquet (mirrored palette, deep red/gold on ivory) -->
+        <svg class="hf hf-tr" aria-hidden="true" viewBox="0 0 280 320" xmlns="http://www.w3.org/2000/svg">
+          <path d="M274 314 C258 258 222 205 172 168 C130 135 82 112 8 90" stroke="rgba(155,15,38,.48)" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+          <path d="M274 314 C246 272 208 232 158 202 C122 180 74 166 10 154" stroke="rgba(155,15,38,.28)" stroke-width="1.4" fill="none" stroke-linecap="round"/>
+          <path d="M274 314 C236 282 192 258 144 244" stroke="rgba(155,15,38,.16)" stroke-width="1" fill="none" stroke-linecap="round"/>
+          <!-- leaves -->
+          <path d="M218 242 C236 222 242 196 230 176 C222 202 218 224 218 242Z" fill="rgba(155,15,38,.14)"/>
+          <path d="M216 242 C198 222 192 196 204 176 C212 202 216 224 216 242Z" fill="rgba(155,15,38,.09)"/>
+          <path d="M162 196 C180 177 184 153 172 136 C166 160 162 180 162 196Z" fill="rgba(155,15,38,.13)"/>
+          <path d="M160 196 C142 177 138 153 150 136 C156 160 160 180 160 196Z" fill="rgba(155,15,38,.08)"/>
+          <path d="M110 156 C126 138 129 116 117 100 C112 122 110 140 110 156Z" fill="rgba(155,15,38,.12)"/>
+          <path d="M108 156 C92 138 89 116 101 100 C106 122 108 140 108 156Z" fill="rgba(155,15,38,.07)"/>
+          <path d="M198 218 C206 207 207 193 199 186 C197 199 197 210 198 218Z" fill="rgba(215,169,73,.32)"/>
+          <path d="M136 184 C144 173 143 161 135 154 C134 167 134 177 136 184Z" fill="rgba(215,169,73,.28)"/>
+          <path d="M76 166 C83 156 82 143 74 137 C73 149 73 159 76 166Z" fill="rgba(215,169,73,.25)"/>
+          <!-- BLOOM 1 -->
+          <g class="hbloom" transform="translate(10,86)">
+            <ellipse rx="16" ry="10" fill="rgba(190,22,48,.72)" transform="rotate(0)"/>
+            <ellipse rx="16" ry="10" fill="rgba(178,20,45,.64)" transform="rotate(36)"/>
+            <ellipse rx="16" ry="10" fill="rgba(205,36,60,.60)" transform="rotate(72)"/>
+            <ellipse rx="16" ry="10" fill="rgba(205,36,60,.60)" transform="rotate(108)"/>
+            <ellipse rx="16" ry="10" fill="rgba(178,20,45,.64)" transform="rotate(144)"/>
+            <ellipse rx="12" ry="6.5" fill="rgba(232,82,98,.62)" transform="rotate(18)"/>
+            <ellipse rx="12" ry="6.5" fill="rgba(232,82,98,.56)" transform="rotate(54)"/>
+            <ellipse rx="12" ry="6.5" fill="rgba(232,82,98,.56)" transform="rotate(90)"/>
+            <ellipse rx="12" ry="6.5" fill="rgba(232,82,98,.56)" transform="rotate(126)"/>
+            <ellipse rx="12" ry="6.5" fill="rgba(232,82,98,.62)" transform="rotate(162)"/>
+            <circle r="8"   fill="rgba(215,169,73,.88)"/>
+            <circle r="4"   fill="rgba(255,242,192,.86)"/>
+            <circle r="1.8" fill="rgba(190,140,40,.9)"/>
+          </g>
+          <!-- BLOOM 2 -->
+          <g class="hbloom" transform="translate(122,120)">
+            <ellipse rx="13" ry="8.5" fill="rgba(182,19,44,.68)" transform="rotate(0)"/>
+            <ellipse rx="13" ry="8.5" fill="rgba(168,17,41,.61)" transform="rotate(45)"/>
+            <ellipse rx="13" ry="8.5" fill="rgba(198,34,57,.57)" transform="rotate(90)"/>
+            <ellipse rx="13" ry="8.5" fill="rgba(198,34,57,.57)" transform="rotate(135)"/>
+            <ellipse rx="10" ry="5.5" fill="rgba(225,74,92,.6)"  transform="rotate(22)"/>
+            <ellipse rx="10" ry="5.5" fill="rgba(225,74,92,.54)" transform="rotate(67)"/>
+            <ellipse rx="10" ry="5.5" fill="rgba(225,74,92,.54)" transform="rotate(112)"/>
+            <ellipse rx="10" ry="5.5" fill="rgba(225,74,92,.6)"  transform="rotate(157)"/>
+            <circle r="6"   fill="rgba(215,169,73,.84)"/>
+            <circle r="3"   fill="rgba(255,242,188,.8)"/>
+            <circle r="1.2" fill="rgba(190,140,40,.86)"/>
+          </g>
+          <!-- BLOOM 3 -->
+          <g class="hbloom" transform="translate(230,264)">
+            <ellipse rx="11" ry="7.5" fill="rgba(175,17,42,.65)" transform="rotate(0)"/>
+            <ellipse rx="11" ry="7.5" fill="rgba(162,15,39,.58)" transform="rotate(45)"/>
+            <ellipse rx="11" ry="7.5" fill="rgba(192,31,54,.54)" transform="rotate(90)"/>
+            <ellipse rx="11" ry="7.5" fill="rgba(192,31,54,.54)" transform="rotate(135)"/>
+            <ellipse rx="8"  ry="4.5" fill="rgba(218,67,86,.56)" transform="rotate(22)"/>
+            <ellipse rx="8"  ry="4.5" fill="rgba(218,67,86,.5)"  transform="rotate(67)"/>
+            <ellipse rx="8"  ry="4.5" fill="rgba(218,67,86,.5)"  transform="rotate(112)"/>
+            <circle r="5"   fill="rgba(215,169,73,.82)"/>
+            <circle r="2.3" fill="rgba(255,242,188,.78)"/>
+            <circle r="1"   fill="rgba(190,140,40,.84)"/>
+          </g>
+          <circle cx="176" cy="202" r="5.5" fill="rgba(215,169,73,.46)"/>
+          <circle cx="176" cy="202" r="2.8" fill="rgba(155,15,38,.5)"/>
+          <circle cx="64"  cy="160" r="5"   fill="rgba(215,169,73,.42)"/>
+          <circle cx="64"  cy="160" r="2.4" fill="rgba(155,15,38,.46)"/>
+          <circle cx="250" cy="288" r="4.5" fill="rgba(215,169,73,.38)"/>
+          <circle cx="250" cy="288" r="2"   fill="rgba(155,15,38,.42)"/>
+        </svg>
+
+        <!-- BL: secondary accent bottom-left of groom half -->
+        <svg class="hf hf-bl" aria-hidden="true" viewBox="0 0 220 200" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 196 C32 154 66 122 112 104" stroke="rgba(155,15,38,.44)" stroke-width="1.9" fill="none" stroke-linecap="round"/>
+          <path d="M4 196 C24 162 50 138 90 122" stroke="rgba(155,15,38,.24)" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+          <path d="M57 136 C67 125 69 111 60 103 C58 116 57 128 57 136Z" fill="rgba(155,15,38,.11)"/>
+          <path d="M55 136 C45 125 43 111 52 103 C54 116 55 128 55 136Z" fill="rgba(155,15,38,.07)"/>
+          <g class="hbloom" transform="translate(116,100)">
+            <ellipse rx="12" ry="8" fill="rgba(178,19,44,.66)" transform="rotate(0)"/>
+            <ellipse rx="12" ry="8" fill="rgba(196,32,55,.59)" transform="rotate(45)"/>
+            <ellipse rx="12" ry="8" fill="rgba(196,32,55,.59)" transform="rotate(90)"/>
+            <ellipse rx="12" ry="8" fill="rgba(178,19,44,.66)" transform="rotate(135)"/>
+            <ellipse rx="9"  ry="5" fill="rgba(220,70,90,.58)" transform="rotate(22)"/>
+            <ellipse rx="9"  ry="5" fill="rgba(220,70,90,.52)" transform="rotate(67)"/>
+            <circle r="5.5" fill="rgba(215,169,73,.84)"/>
+            <circle r="2.5" fill="rgba(255,242,188,.78)"/>
+          </g>
+          <circle cx="58"  cy="158" r="5"   fill="rgba(215,169,73,.42)"/>
+          <circle cx="58"  cy="158" r="2.3" fill="rgba(155,15,38,.46)"/>
+        </svg>
+
+        <!-- BR: bottom-right accent -->
+        <svg class="hf hf-br" aria-hidden="true" viewBox="0 0 200 170" xmlns="http://www.w3.org/2000/svg">
+          <path d="M196 166 C168 140 134 120 94 112" stroke="rgba(155,15,38,.38)" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+          <path d="M142 130 C150 118 150 104 141 97 C139 110 139 122 142 130Z" fill="rgba(155,15,38,.1)"/>
+          <path d="M140 130 C132 118 132 104 141 97 C143 110 143 122 140 130Z" fill="rgba(155,15,38,.07)"/>
+          <g class="hbloom" transform="translate(96,108)">
+            <ellipse rx="11" ry="7" fill="rgba(172,16,42,.62)" transform="rotate(0)"/>
+            <ellipse rx="11" ry="7" fill="rgba(190,30,52,.55)" transform="rotate(60)"/>
+            <ellipse rx="11" ry="7" fill="rgba(190,30,52,.55)" transform="rotate(120)"/>
+            <ellipse rx="7.5" ry="4.2" fill="rgba(215,65,85,.56)" transform="rotate(30)"/>
+            <circle r="5"   fill="rgba(215,169,73,.8)"/>
+            <circle r="2.2" fill="rgba(255,242,188,.74)"/>
+          </g>
+        </svg>
+
+        <!-- TL: inner-edge vine near the gold seam -->
+        <svg class="hf hf-tl" aria-hidden="true" viewBox="0 0 130 300" xmlns="http://www.w3.org/2000/svg">
+          <path d="M8 4 C22 52 32 116 26 178 C22 228 14 262 16 298" stroke="rgba(155,15,38,.4)" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+          <path d="M26 76 C16 63 10 48 16 35 C20 52 24 65 26 76Z" fill="rgba(155,15,38,.13)"/>
+          <path d="M24 76 C34 63 40 48 34 35 C30 52 26 65 24 76Z"   fill="rgba(155,15,38,.08)"/>
+          <path d="M22 172 C12 159 6 144 12 131 C16 148 20 162 22 172Z" fill="rgba(155,15,38,.11)"/>
+          <path d="M24 172 C34 159 40 144 34 131 C30 148 26 162 24 172Z"   fill="rgba(155,15,38,.07)"/>
+          <g class="hbloom" transform="translate(20,108)">
+            <ellipse rx="10" ry="6.5" fill="rgba(175,18,44,.6)" transform="rotate(0)"/>
+            <ellipse rx="10" ry="6.5" fill="rgba(192,30,53,.53)" transform="rotate(60)"/>
+            <ellipse rx="10" ry="6.5" fill="rgba(192,30,53,.53)" transform="rotate(120)"/>
+            <ellipse rx="7"  ry="3.8" fill="rgba(216,68,88,.54)" transform="rotate(30)"/>
+            <circle r="4.5" fill="rgba(215,169,73,.8)"/>
+            <circle r="2"   fill="rgba(255,242,188,.74)"/>
+          </g>
+          <g class="hbloom" transform="translate(14,240)">
+            <ellipse rx="9" ry="5.5" fill="rgba(165,14,40,.56)" transform="rotate(0)"/>
+            <ellipse rx="9" ry="5.5" fill="rgba(186,28,50,.5)"  transform="rotate(60)"/>
+            <ellipse rx="9" ry="5.5" fill="rgba(186,28,50,.5)"  transform="rotate(120)"/>
+            <circle r="4"   fill="rgba(215,169,73,.76)"/>
+            <circle r="1.8" fill="rgba(255,242,188,.7)"/>
+          </g>
+        </svg>
+
+        <p class="tag">The Groom</p>
+        <h1 class="name pin" id="n-groom"></h1>
+        <p class="fam" id="p-groom"></p>
+      </div>
+    </div>
+
+    <div class="banner reveal">
+      <p class="arabic">بسم الله الرحمن الرحيم</p>
+      <p class="invite-line">Request the pleasure of your company at the</p>
+      <h2 class="cin big">Baraat Celebration</h2>
+      <div class="ornament"><i></i><b></b><i></i></div>
+      <p class="date" id="date-line"></p>
+    </div>
+    <div class="scroll-cue" aria-hidden="true"><span></span></div>
+  </section>
+
+  <!-- CINEMATIC CELEBRATION IMAGE -->
+  <figure class="cinematic reveal">
+    <img src="assets/celebration.webp" alt="Red bridal attire and an ivory groom sherwani arranged with wedding flowers and a dhol" loading="lazy" decoding="async">
+    <figcaption><span>Red, ivory &amp; gold</span><strong>Where two families become one</strong></figcaption>
+  </figure>
+
+  <div class="floral-interlude reveal" aria-hidden="true"><img src="assets/floral-spray.webp" alt="" loading="lazy" decoding="async"></div>
+
+  <!-- DETAILS -->
+  <section class="details">
+    <h3 class="title reveal">Event Details</h3>
+    <div class="grid">
+      <article class="tile reveal red">
+        <div class="ico"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></div>
+        <h4>Date</h4><p id="d-date"></p>
+      </article>
+      <article class="tile reveal white">
+        <div class="ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+        <h4>Baraat Arrival</h4><p id="d-time"></p>
+      </article>
+      <article class="tile reveal red">
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></div>
+        <h4>Venue</h4><p id="d-venue"></p><small id="d-address"></small>
+      </article>
+    </div>
+    <a id="map-wrap" class="map-wrap reveal" target="_blank" rel="noopener" aria-label="Open venue in Google Maps">
+      <iframe id="map-frame" class="map-frame" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade" title="Venue location map" tabindex="-1"></iframe>
+      <span class="map-cta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg> Open in Google Maps</span>
+    </a>
+  </section>
+  <section class="timeline-wrap">
+    <h3 class="title reveal">The Evening</h3>
+    <ol class="timeline" id="timeline"></ol>
+  </section>
+
+  <!-- COUNTDOWN -->
+  <section class="count reveal">
+    <h3 class="title light">The Procession Begins In</h3>
+    <div class="timer">
+      <div><b id="c-d">00</b><span>Days</span></div>
+      <div><b id="c-h">00</b><span>Hours</span></div>
+      <div><b id="c-m">00</b><span>Min</span></div>
+      <div><b id="c-s">00</b><span>Sec</span></div>
+    </div>
+  </section>
+
+  <!-- RSVP -->
+  <section class="rsvp reveal">
+    <p class="pin big">Dance with us!</p>
+    <p class="note" id="rsvp-note"></p>
+    <button id="celebrate" class="btn outline">&#127878; Celebrate</button>
+  </section>
+
+  <footer>
+    <img class="floral-footer" src="assets/floral-spray.webp" alt="" loading="lazy" decoding="async" aria-hidden="true">
+    <p class="pin" id="foot-names"></p>
+  </footer>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
