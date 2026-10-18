@@ -44,7 +44,6 @@
     frame.src = "https://maps.google.com/maps?q=" + q + "&output=embed&z=16";
     wrap.href = INVITE.mapLink;
   })();
-  $("rsvp-note").textContent = INVITE.rsvpNote;
   $("foot-names").textContent = `${INVITE.bride} & ${INVITE.groom}`;
   
   $("timeline").innerHTML = INVITE.schedule
